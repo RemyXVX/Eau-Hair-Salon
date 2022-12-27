@@ -1,0 +1,5 @@
+obj/
+bin/
+TestResult/
+appsetting.json
+.vscode
