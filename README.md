@@ -18,7 +18,7 @@
 * MySQL Workbench
 
 ## Description
-_Updating on previous project and applying C# into it. Plus testing our lines of code through the Red/Green Method._
+_Creating A website for our amazing client Claire. They will be able to create work profiles for all future stylist and update/edit all current ones. On top of that, being able to keep trak of all the clients each stylists takes on._
 
 ## Webpage
 * [https://github.com/RemyXVX/Eau-Hair-Salon]
@@ -53,27 +53,35 @@ _Updating on previous project and applying C# into it. Plus testing our lines of
 git clone "[https://github.com/RemyXVX/Eau-Hair-Salon.git]"
 ````
 
-<big>I would recommend also setting up work envirnoment after cloning by:</big>
+<big>I would recommend also setting up your work envirnoment after cloning by:</big>
 
 ```
-dotnet build
+$dotnet build
 ```
-<big>Then go on to your favorite web browser and enter [http://localhost:5001](http://localhost:5001) to run the application. 
+<big>Once we have the program settled, I would add an '_appsetting.json_' file like:</big>
+```
+$touch appsetting.json
 
-Afterwards, to see our work of art:</big>
+and then add to the file:
+
+{
+  "ConnectionStrings": 
+  {
+    "DefaultConnection": "Server=localhost;Port=3306;database=[YOUR-DATABASE-NAME-HERE];uid=[YOUR-USERNAME-HERE];pwd=[YOUR-PASSWORD-HERE];"
+  }
+}
+```
+
+<big>Afterwards,</big>
 
 ```
-dotnet run
+$dotnet run
 ```
-<big>This way we can double check for errors in our could that need to be addressed.<br>
-To check our test, you can always run:</big>
 
-```
-dotnet test
-```
+<big>Now we can double check for errors in our code addressed it by the errors that follow<br>
 
 ## Known Bugs
-* _Work in progress, comeback soon with more information and maybe a work of art?_
+* _Testing is still being done. Will come back with an errors or bugs_
 
 ## License
 * **SEE LICENSE [HERE](./LICENSE.txt)** 
