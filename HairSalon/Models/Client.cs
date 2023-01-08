@@ -6,15 +6,12 @@
 
 namespace HairSalon.Models
 {
-  public class ClientsController
+  public class Client
   {
-    public class Client
-    {
-      public int ClientId {get; set;}
-      public string ClientName {get; set;}
-      public string ClientDescription {get; set;}
-      public int StylistId {get; set;}
-      public Stylist Stylist {get; set;}
-    }
+    public int ClientId {get; set;}
+    public string ClientName {get; set;}
+    public string ClientDescription {get; set;}
+    public int StylistId {get; set;}
+    public Stylist Stylist {get; set;}
   }
 }
