@@ -11,13 +11,13 @@
 {
     @Html.HiddenFor(model => model.ClientId)
 
-    <p>Name</p>
+    <p>Name:</p>
     <p>@Html.EditorFor(model => model.ClientName)</p>
 
-    <p>Stylist</p>
+    <p>Stylist:</p>
     <p>@Html.DropDownList("StylistId")</p>
 
-    <p>Description</p>
+    <p>Description:</p>
     <p>@Html.EditorFor(model => model.ClientDescription)</p>
 
 <br>
