@@ -3,3 +3,4 @@ bin/
 TestResult/
 appsettings.json
 .vscode
+-uroot/
