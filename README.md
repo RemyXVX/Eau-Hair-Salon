@@ -58,7 +58,7 @@ git clone "[https://github.com/RemyXVX/Eau-Hair-Salon.git]"
 ```
 $dotnet build
 ```
-<big>Once we have the program settled, I would add an '_appsetting.json_' file like:</big>
+<big>Once we have the program settled, I would add an '_appsettings.json_' file like:</big>
 ```
 $touch appsetting.json
 
