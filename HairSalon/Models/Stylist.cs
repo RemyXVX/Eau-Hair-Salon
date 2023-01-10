@@ -1,8 +1,3 @@
-// things we need for the stylist:
-// 1)list of stylists
-//   a)details of the stylists
-//   b)list of clients per stylist
-// 2)must be able to add new stylist
 using System.Collections.Generic;
 
 namespace HairSalon.Models

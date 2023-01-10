@@ -1,9 +1,3 @@
-// things we need for the client model
-// 1)list of clients
-//    a)details of clients
-//    b)who is their stylist
-// 2)create new clients
-
 namespace HairSalon.Models
 {
   public class Client

@@ -1,0 +1,13 @@
+.outer {
+  background-color: rgb(102, 179, 230);
+}
+
+.first {
+  margin-top: 75px;
+  background-color: rgb(211, 171, 211);
+  padding: 10px;
+  border: 3px;
+  border-color: grey;
+  border-radius: 5px;
+  box-shadow: 0 4.5px 12px rgb(24, 22, 22), 0 4.5px 12px rgb(24, 22, 22);
+}

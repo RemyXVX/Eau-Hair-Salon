@@ -5,10 +5,13 @@
 @model HairSalon.Models.Client
 
 <h2>@Html.DisplayFor(model => model.ClientName)</h2>
-<p>Stylist: @Html.DisplayFor(model => model.Stylist.StylistName)</p>
 <hr />
+<div>
+<span>Stylist: @Html.DisplayFor(model => model.Stylist.StylistName)</span>
 <br>
-<p>Description: @Html.DisplayFor(model => model.ClientDescription)</p>
+<span>Description: @Html.DisplayFor(model => model.ClientDescription)</span>
+<br>
+</div>
 <br>
 <div>
   <span>
