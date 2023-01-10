@@ -17,7 +17,9 @@ namespace HairSalon
       builder.Services.AddDbContext<HairSalonContext>(
       dbContextOptions => dbContextOptions
         .UseMySql(
-          builder.Configuration["ConnectionStrings:DefaultConnection"], ServerVersion.AutoDetect(
+          builder.Configuration["ConnectionStrings:DefaultConnection"], 
+          ServerVersion.AutoDetect
+          (
             builder.Configuration["ConnectionStrings:DefaultConnection"]
           )
         )
