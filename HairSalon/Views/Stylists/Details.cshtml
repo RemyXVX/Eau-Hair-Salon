@@ -10,7 +10,19 @@
 <br>
 <h3>Clients:</h3>
 
-<p>@Html.ActionLink("Add new client", "Create", "Clients")</p>
-<p>@Html.ActionLink("Edit Stylist", "Edit", new { id = Model.StylistId })</p>
+<br>
+<div>
+  <span>
+      <span>@Html.ActionLink("Add new client", "Create", "Clients")</span>
+      <br>
+      <span>@Html.ActionLink("Edit Stylist", "Edit", new { id = Model.StylistId })</span>
+      <br>
+      <span>@Html.ActionLink("Delete Stylist", "Delete", new { id = Model.StylistId })</span>
+      <br>
+      <span>@Html.ActionLink("Back to Stylists", "Index")</span>
+  </span>
+</div>
+
+
 <p>@Html.ActionLink("Delete Stylist", "Delete", new { id = Model.StylistId })</p>
 <p>@Html.ActionLink("Back to Stylists", "Index")</p>

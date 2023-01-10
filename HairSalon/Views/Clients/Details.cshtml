@@ -10,7 +10,12 @@
 <br>
 <p>Description: @Html.DisplayFor(model => model.ClientDescription)</p>
 <br>
-
-<p>@Html.ActionLink("Edit client", "Edit", new { id = Model.ClientId })</p>
-<p>@Html.ActionLink("Delete client", "Delete", new { id = Model.ClientId })</p>
-<p>@Html.ActionLink("Back to clients", "Index")</p>
+<div>
+  <span>
+      <span>@Html.ActionLink("Edit client", "Edit", new { id = Model.ClientId })</span>
+      <br>
+      <span>@Html.ActionLink("Delete client", "Delete", new { id = Model.ClientId })</span>
+      <br>
+      <span>@Html.ActionLink("Back to clients", "Index")</span>
+  </span>
+</div>

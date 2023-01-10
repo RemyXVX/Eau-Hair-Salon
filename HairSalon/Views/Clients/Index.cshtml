@@ -17,4 +17,10 @@
   <li>@Html.ActionLink($"{client.ClientName}", "Details", new { id = client.ClientId }) | @client.Stylist.StylistName </li>
 }
 <br>
-<p>@Html.ActionLink("Back to home", "Index", "Home")</p>
+<div>
+  <span>
+      <span>@Html.ActionLink("Add new Client", "Create", "Clients")</span>
+      <br>
+      <span>@Html.ActionLink("Back to home", "Index", "Home")</span>
+  </span>
+</div>

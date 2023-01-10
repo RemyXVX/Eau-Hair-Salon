@@ -8,21 +8,20 @@
 <br>
 @using (Html.BeginForm())
 {
-  <p>
-  @Html.LabelFor(model => model.Stylist)
-  @Html.DropDownList("StylistId")
-  </p>
-  <p>
-  Name:
-  @Html.LabelFor(model => model.ClientName, new { @class = "", placeholder="Required", required="required"})
-  </p>
-  <p>
-  Description:
-  @Html.TextBoxFor(model => model.ClientDescription, new { @class = "", placeholder="Required", required="required"})
-  </p>
+  <p>@Html.LabelFor(model => model.Stylist, new { @class = "", placeholder="Required", required="required"})</p>
+  <p>@Html.DropDownList("StylistId")</p>
+  <p>Name:</p>
+  <p>@Html.TextBoxFor(model => model.ClientName, new { @class = "", placeholder="Required", required="required"})</p>
+  <p>Description:</p>
+  <p>@Html.TextBoxFor(model => model.ClientDescription, new { @class = "", placeholder="Required", required="required"})</p>
   <br>
   <input type="submit" value="Save client" class="btn" />
 }
 <br>
-<p>@Html.ActionLink("Back to Home", "Index", "Home")</p>
-<p>@Html.ActionLink("See All stylists", "Index", "Stylists")</p>
+<div>
+  <span>
+      <span>@Html.ActionLink("Back to Home", "Index", "Home")</span>
+      <br>
+      <span>@Html.ActionLink("See All stylists", "Index", "Stylists")</span>
+  </span>
+</div>

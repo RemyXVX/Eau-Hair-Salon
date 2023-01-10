@@ -8,12 +8,18 @@
 
 @using (Html.BeginForm())
 {
-  <p>Name</p>
+  <p>Name:</p>
   <p>@Html.TextBoxFor(model => model.StylistName, new { @class = "", placeholder="Required", required="required"})</p>
-  <p>Details</p>
+  <p>Details:</p>
   <p>@Html.TextBoxFor(model => model.StylistDetails, new { @class = "", placeholder="Required", required="required"})</p>
-  <input type="submit" value="Save stylist" class="btn btn-primary" />
+  <br>
+  <input type="submit" value="Save stylist" class="btn" />
 }
 <br>
-<p>@Html.ActionLink("Back to stylists", "Index")</p>
-<p>@Html.ActionLink("Back to home", "Index", "Home")</p>
+<div>
+  <span>
+      <span>@Html.ActionLink("Back to stylists", "Index")</span>
+      <br>
+      <span>@Html.ActionLink("Back to home", "Index", "Home")</span>
+  </span>
+</div>
